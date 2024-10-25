@@ -67,7 +67,12 @@
                 </div>
 
                 <p class="description hidden hidden-l">
-                    Soy estudiante de Ing. en Sistema en la Universidad del Magdalena, me desempeño en el área de
+
+                    Actualmente estudio en la Universidad del Magdalena, cursando el 8vo semestre,
+                    adquiriendo manejo de paradigmas de la programación como POO, estructuras de datos, complejidad
+                    algoritmica, bases de datos, desarrollo web, etc. Además de habilidades como redacción e
+                    interpretación de historias de usuarios, requerimientos, comunicación acertiva, me desempeño en el
+                    área de
                     desarrollo Backend, aunque también tengo conocimientos sólidos en la parte del Frontend.
 
                     Actualmente uso como lenguaje base Python, principalmente usando el framework Flask, cuento con
@@ -196,33 +201,88 @@
 
         <div class="exp" id="exp">
             <h3 class="display-2">Reactiva R7</h3>
-            <p class="description hidden ">
-                Actualmente sigo vinculado con esta empresa, cumpliendo con mis funciones como desarrollador fullstack
-                para desarrollo de un software privativo, usando frameworks de Python como Flask, Tkinter, Sqlalchemy,
-                además de usar también tecnologías de frontend como JS, CSS3 y HTML5, frameworks como Bootstrap, entre
-                otros. También llevo a cabo la realización de diagramas de flujo, mapeo de bases de datos. También he
-                realizado migración de datos de archivos de extensiones .xls y/o .xlsx a bases de datos relacioneales en
-                motores como SQL SERVER y MySql.
-            </p>
+
+            <div class="flex">
+
+                <div class="text-coneic">
+                    <p class="description hidden ">
+                        Actualmente sigo vinculado con esta empresa, cumpliendo con mis funciones como desarrollador
+                        fullstack
+                        para desarrollo de un software privativo, usando frameworks de Python como Flask, Tkinter,
+                        Sqlalchemy,
+                        además de usar también tecnologías de frontend como JS, CSS3 y HTML5, frameworks como Bootstrap,
+                        entre
+                        otros. De la misma manera llevo a cabo la realización de diagramas de flujo, mapeo de bases de
+                        datos. También he
+                        realizado migración de datos de archivos de extensiones .xls y/o .xlsx a bases de datos
+                        relacioneales en
+                        motores como SQL SERVER y MySql.
+                    </p>
+                </div>
+
+                <div class="container-chart">
+                    <canvas id="reactiva">
+
+                    </canvas>
+                </div>
+
+            </div>
+
 
             <h3 class="display-2 display-2-blue">CONEIC SMR</h3>
 
-            <div class="gallery flex">
+            <div class="flex">
 
-                <img src="./data/logo.png" alt="logo de coneic" class="coneic hidden" height="300px" width="300px">
+
+                <div class="container-chart">
+                    <canvas id="coneic">
+
+                    </canvas>
+                </div>
+
+                <!-- <img src="./data/logo.png" loading="lazy" alt="logo de coneic" class="coneic hidden" height="300px" width="300px"> -->
 
                 <div class="text-coneic">
                     <p class="description hidden hidden-l">
-                        Desarrollé e implementé, tanto backend como frontend para dicha aplicación, contando con un panel de
+                        Desarrollé e implementé, tanto backend como frontend para dicha aplicación, contando con un
+                        panel de
                         administración para control de actividades y del evento prinicipal. Además de un apartado de
-                        usuarios, para registrarse en las diferentes actividades. Un sistema de scaneo y creación de códigos
+                        usuarios, para registrarse en las diferentes actividades. Un sistema de escaner y creación de
+                        códigos
                         QR’s para la identificación de usuarios, sistema de notificaciones vía correo electrónico y
                         autenticación con JWT.
                     </p>
-                    <a href="https://www.coneic.org/" class="btn btn-primary btn-semi-circle">Ir al sitio <i class="fa-solid fa-link"></i></a>
+                    <a href="https://www.coneic.org/" class="btn btn-primary btn-semi-circle">Ir al sitio <i
+                            class="fa-solid fa-link"></i></a>
                 </div>
 
-                
+
+            </div>
+
+            <hr class="salt">
+
+            <h3 class="display-2 display-2-purple">Ai-rchive - File Controller</h3>
+
+            <div class="flex">
+                <div class="text-coneic">
+                    <p class="description hidden hidden-l">
+                        En este poyecto hice uso de tecnologías como Python y JavaScript, además de la integración de la
+                        API de GEMINI-PRO-AI para hacer consultas desde el mismo sistema. Teniendo controll de los
+                        archivos asignados por áreas recurriendo a la autenticación con JWT, donde se pueden realizar solicitudes a otras dependecias para
+                        descargar ver o modificar archivos. Del mismo modo todos estos movimientos son registrados en un
+                        historial que puede ser visto desde el mismo sistema o descargado en un archivo de Excel, sin
+                        olvidar que cuenta con notificaciones vía correo electronico usando el servicio de SMTP.
+                    </p>
+                    <a href="https://github.com/jesuscalderondev/fileController"
+                        class="btn btn-primary btn-semi-circle">Repositorio <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="container">
+                    <canvas id="airchive">
+
+                    </canvas>
+                </div>
+
             </div>
         </div>
 
@@ -284,6 +344,7 @@
 
 </body>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/chart.js/dist/chart.umd.js"></script>
 <script src="src/logic/index.js"></script>
 <script src="https://kit.fontawesome.com/f1af7d663e.js" crossorigin="anonymous"></script>
 
