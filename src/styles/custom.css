@@ -12328,6 +12328,11 @@ main ul li a {
   main {
     margin-bottom: 70px;
   }
+  main .container-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 main .salt {
   height: 3px;
