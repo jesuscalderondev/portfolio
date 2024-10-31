@@ -15,7 +15,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 let charts = {};
 
 
-function createGraphic(canvas, data, title, type = "radar", height="300px", width=["300px", window.innerWidth.toString()+"px"], scale=false) {
+function createGraphic(canvas, data, title, type = "radar", height = "300px", width = ["300px", window.innerWidth.toString() + "px"], scale = false) {
 
     var config = {
         type: type,
@@ -31,11 +31,11 @@ function createGraphic(canvas, data, title, type = "radar", height="300px", widt
                     text: title
                 }
             }
-            
+
         },
     }
 
-    if(scale){
+    if (scale) {
         config.scale = {
             y: {
                 beginAtZero: true,
@@ -58,11 +58,11 @@ function createGraphic(canvas, data, title, type = "radar", height="300px", widt
                     console.log(window.innerWidth);
                     console.log(width[1]);
 
-                    
-                    
+
+
                     const chart = new Chart(contentChart, config);
                     chart.canvas.parentNode.style.height = height;
-                    chart.canvas.parentNode.style.width = (window.innerWidth < 400)? width[1] : width[0];
+                    chart.canvas.parentNode.style.width = (window.innerWidth < 400) ? width[1] : width[0];
                     chart.options.animation = {
                         duration: 1000,
                         easing: 'easeInOutSine'
@@ -73,15 +73,15 @@ function createGraphic(canvas, data, title, type = "radar", height="300px", widt
                     const copy = charts[canvas].config;
 
                     console.log(copy);
-                    
+
 
                     charts[canvas].destroy()
 
                     charts[canvas] = new Chart(contentChart, copy);
                     charts[canvas].canvas.parentNode.style.height = height;
-                    charts[canvas].canvas.parentNode.style.width = (window.innerWidth < 400)? width[1] : width[0];
+                    charts[canvas].canvas.parentNode.style.width = (window.innerWidth < 400) ? width[1] : width[0];
                     charts[canvas].options.animation = {
-                        duration: 1000,
+                        duration: 2000,
                         easing: 'easeInOutSine'
                     };
                 }
@@ -121,9 +121,10 @@ createGraphic("airchive",
     },
 
     'AIRCHIVE DISTRIBUTION',
-    "doughnut",
+    "pie",
     "300px",
-    ["400px", "360px"]
+    ["400px", "360px"],
+    true
 );
 
 createGraphic("reactiva",
@@ -145,4 +146,51 @@ createGraphic("reactiva",
     "300px",
     ["400px", "360px"],
     true
+);
+
+createGraphic("systemas",
+    {
+        labels: ["Python", "HTML5", "SCSS", "JavasCript", "Otros"],
+        datasets: [
+            {
+                label: '% de uso',
+                data: [1.2, 0.9, 27.7, 17.5, 52.7],
+                borderRadius: Number.MAX_VALUE,
+                borderSkipped: false,
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                ]
+            }
+        ]
+    },
+    'SYSTE+ DISTRIBUTION',
+    "bar",
+    "300px",
+    ["400px", "360px"],
+    true
+);
+
+
+createGraphic("financiApp",
+    {
+        labels: ["Python", "HTML5", "CSS", "JavasCript", "Bat"],
+        datasets: [
+            {
+                label: '% de uso',
+                data: [100, 0, 0, 0, 0],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                ]
+            }
+        ]
+    },
+
+    'AIRCHIVE DISTRIBUTION',
+    "bar",
+    "300px",
+    ["400px", "360px"]
 );

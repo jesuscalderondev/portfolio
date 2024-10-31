@@ -230,10 +230,11 @@ main {
 
     .cards {
         display: grid;
+        position: relative;
         grid-template-columns: repeat(3, auto);
         gap: .5rem;
 
-        .skill {
+        .skill, .tarjet{
             width: auto;
             background-color: rgb(21 27 35);
             color: $white;
@@ -439,11 +440,81 @@ main {
 
     ul li{
         list-style: none;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: end;
+
         a{
             color: #08f;
             margin: 0 5px;
             text-decoration: none;
         }
+    }
+
+    .tarjet{
+        p{
+            text-align: center;
+        }
+    }
+
+    .slider{
+        height: 200px;
+        width: 75vw;
+        margin: auto;
+        overflow: hidden;
+
+        .slide-track{
+            animation: scroll 20s linear infinite;
+            width: calc(250px * 10);
+        }
+
+        .slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        .brand{
+            &-purple{
+                text-shadow: 1px 2px 5px $purple;
+            }
+
+            &-blue{
+                text-shadow: 1px 2px 5px $blue;
+            }
+
+            &-warning{
+                text-shadow: 1px 2px 5px $warning;
+            }
+
+            &-danger{
+                text-shadow: 1px 2px 5px $danger;
+            }
+        }
+
+        .slide i{
+            font-size: 150px;
+            color: $gray-400;
+        }
+
+
+    }
+
+    @keyframes scroll {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translate(calc(-250px * 5));
+        }
+    }
+
+    .contact .description ul li{
+        display: flex;
+        justify-content: start;
     }
 
     @media(max-width: 780px) {
