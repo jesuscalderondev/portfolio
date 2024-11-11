@@ -12153,7 +12153,7 @@ main .cards {
   grid-template-columns: repeat(3, auto);
   gap: 0.5rem;
 }
-main .cards .skill, main .cards .tarjet {
+main .cards .skill {
   width: auto;
   background-color: rgb(21, 27, 35);
   color: #fff;
@@ -12161,86 +12161,77 @@ main .cards .skill, main .cards .tarjet {
   border-radius: 10px;
   border: 0.1px solid #9198a1;
 }
-main .cards .skill:nth-child(2), main .cards .tarjet:nth-child(2) {
-  transition-delay: 200ms;
-}
-main .cards .skill:nth-child(3), main .cards .tarjet:nth-child(3) {
-  transition-delay: 300ms;
-}
-main .cards .skill:nth-child(4), main .cards .tarjet:nth-child(4) {
-  transition-delay: 400ms;
-}
-main .cards .skill-blue .head i, main .cards .tarjet-blue .head i {
+main .cards .skill-blue .head i {
   color: #08f;
 }
-main .cards .skill-blue .progress .bar, main .cards .tarjet-blue .progress .bar {
+main .cards .skill-blue .progress .bar {
   background-color: #08f;
 }
-main .cards .skill-red .head i, main .cards .tarjet-red .head i {
+main .cards .skill-red .head i {
   color: #dc3545;
 }
-main .cards .skill-red .progress .bar, main .cards .tarjet-red .progress .bar {
+main .cards .skill-red .progress .bar {
   background-color: #dc3545;
 }
-main .cards .skill-green .head i, main .cards .tarjet-green .head i {
+main .cards .skill-green .head i {
   color: #198754;
 }
-main .cards .skill-green .progress .bar, main .cards .tarjet-green .progress .bar {
+main .cards .skill-green .progress .bar {
   background-color: #198754;
 }
-main .cards .skill-yellow .head i, main .cards .tarjet-yellow .head i {
+main .cards .skill-yellow .head i {
   color: #ffc107;
 }
-main .cards .skill-yellow .progress .bar, main .cards .tarjet-yellow .progress .bar {
+main .cards .skill-yellow .progress .bar {
   background-color: #ffc107;
 }
-main .cards .skill-purple .head i, main .cards .tarjet-purple .head i {
+main .cards .skill-purple .head i {
   color: #6f42c1;
 }
-main .cards .skill-purple .progress .bar, main .cards .tarjet-purple .progress .bar {
+main .cards .skill-purple .progress .bar {
   background-color: #6f42c1;
 }
-main .cards .skill .progress, main .cards .tarjet .progress {
+main .cards .skill .progress {
   background-color: #495057;
   height: 10px;
 }
-main .cards .skill .progress .bar, main .cards .tarjet .progress .bar {
+main .cards .skill .progress .bar {
   animation: barComplete 0.5s;
   border-radius: 10px;
 }
-main .cards .skill .progress .bar_55, main .cards .tarjet .progress .bar_55 {
+main .cards .skill .progress .bar_55 {
   width: 55%;
   animation: bar55 0.5s;
 }
-main .cards .skill .progress .bar_60, main .cards .tarjet .progress .bar_60 {
+main .cards .skill .progress .bar_60 {
   width: 60%;
   animation: bar60 0.5s;
 }
-main .cards .skill .progress .bar_65, main .cards .tarjet .progress .bar_65 {
+main .cards .skill .progress .bar_65 {
   width: 65%;
   animation: bar65 0.5s;
 }
-main .cards .skill .progress .bar_70, main .cards .tarjet .progress .bar_70 {
+main .cards .skill .progress .bar_70 {
   width: 70%;
   animation: bar70 0.5s;
 }
-main .cards .skill .progress .bar_70, main .cards .tarjet .progress .bar_70 {
+main .cards .skill .progress .bar_70 {
   width: 70%;
   animation: bar70 0.5s;
 }
-main .cards .skill .progress .bar_75, main .cards .tarjet .progress .bar_75 {
+main .cards .skill .progress .bar_75 {
   width: 75%;
   animation: bar75 0.5s;
 }
-main .cards .skill .progress .bar_80, main .cards .tarjet .progress .bar_80 {
+main .cards .skill .progress .bar_80 {
   width: 80%;
   animation: bar80 0.5s;
 }
-main .cards .skill .progress .bar_85, main .cards .tarjet .progress .bar_85 {
+main .cards .skill .progress .bar_85 {
   width: 85%;
   animation: bar85 0.5s;
 }
-main .cards .skill .progress .bar_90, main .cards .tarjet .progress .bar_90 {
+main .cards .skill .progress .bar_90 {
   width: 90%;
   animation: bar90 0.5s;
 }
@@ -12292,6 +12283,29 @@ main .cards .skill .progress .bar_90, main .cards .tarjet .progress .bar_90 {
     width: 75%;
   }
 }
+main .cards .tarjet {
+  height: 30px;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 30px;
+}
+main .cards .tarjet p {
+  margin-top: 5px;
+}
+main .cards .tarjet-purple {
+  background-color: #6f42c1;
+}
+main .cards .tarjet-blue {
+  background-color: #0d6efd;
+}
+main .cards .tarjet-danger {
+  background-color: #fd7e14;
+}
 main ul li {
   list-style: none;
   display: flex;
@@ -12304,40 +12318,17 @@ main ul li a {
   margin: 0 5px;
   text-decoration: none;
 }
-main .tarjet p {
-  text-align: center;
-}
-main .slider {
-  height: 200px;
-  width: 75vw;
-  margin: auto;
-  overflow: hidden;
-}
-main .slider .slide-track {
-  animation: scroll 20s linear infinite;
-  width: 2500px;
-}
-main .slider .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
-main .slider .brand-purple {
+main .brand-purple {
   text-shadow: 1px 2px 5px #6f42c1;
 }
-main .slider .brand-blue {
+main .brand-blue {
   text-shadow: 1px 2px 5px #0d6efd;
 }
-main .slider .brand-warning {
+main .brand-warning {
   text-shadow: 1px 2px 5px #ffc107;
 }
-main .slider .brand-danger {
+main .brand-danger {
   text-shadow: 1px 2px 5px #dc3545;
-}
-main .slider .slide i {
-  font-size: 150px;
-  color: #ced4da;
 }
 @keyframes scroll {
   from {

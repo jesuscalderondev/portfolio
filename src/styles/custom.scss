@@ -234,25 +234,13 @@ main {
         grid-template-columns: repeat(3, auto);
         gap: .5rem;
 
-        .skill, .tarjet{
+        .skill{
             width: auto;
             background-color: rgb(21 27 35);
             color: $white;
             padding: 10px;
             border-radius: 10px;
             border: 0.1px solid $color-txt;
-
-            &:nth-child(2) {
-                transition-delay: 200ms;
-            }
-
-            &:nth-child(3) {
-                transition-delay: 300ms;
-            }
-
-            &:nth-child(4) {
-                transition-delay: 400ms;
-            }
 
             &-blue {
 
@@ -436,7 +424,36 @@ main {
                 }
             }
         }
+
+        .tarjet{
+            height: 30px;
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 30px;
+
+            p{
+                margin-top: 5px;
+            }
+
+            &-purple{
+                background-color: $purple;
+            }
+
+            &-blue{
+                background-color: $blue;
+            }
+
+            &-danger{
+                background-color: $orange;
+            }
+        }
     }
+
+
 
     ul li{
         list-style: none;
@@ -453,54 +470,24 @@ main {
         }
     }
 
-    .tarjet{
-        p{
-            text-align: center;
-        }
-    }
+    
 
-    .slider{
-        height: 200px;
-        width: 75vw;
-        margin: auto;
-        overflow: hidden;
-
-        .slide-track{
-            animation: scroll 20s linear infinite;
-            width: calc(250px * 10);
+    .brand{
+        &-purple{
+            text-shadow: 1px 2px 5px $purple;
         }
 
-        .slide{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5rem;
+        &-blue{
+            text-shadow: 1px 2px 5px $blue;
         }
 
-        .brand{
-            &-purple{
-                text-shadow: 1px 2px 5px $purple;
-            }
-
-            &-blue{
-                text-shadow: 1px 2px 5px $blue;
-            }
-
-            &-warning{
-                text-shadow: 1px 2px 5px $warning;
-            }
-
-            &-danger{
-                text-shadow: 1px 2px 5px $danger;
-            }
+        &-warning{
+            text-shadow: 1px 2px 5px $warning;
         }
 
-        .slide i{
-            font-size: 150px;
-            color: $gray-400;
+        &-danger{
+            text-shadow: 1px 2px 5px $danger;
         }
-
-
     }
 
     @keyframes scroll {

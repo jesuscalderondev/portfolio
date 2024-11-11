@@ -9,6 +9,17 @@ const observer = new IntersectionObserver((entries) => {
     });
 })
 
+const itemsNav = document.querySelectorAll(".nav-link");
+
+const btnClose = document.querySelector(".navbar-toggler")
+
+itemsNav.forEach(item => {
+    item.addEventListener("click", () => {
+        btnClose.click();
+    });
+});
+
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
@@ -55,11 +66,6 @@ function createGraphic(canvas, data, title, type = "radar", height = "300px", wi
             if (content.isIntersecting) {
 
                 try {
-                    console.log(window.innerWidth);
-                    console.log(width[1]);
-
-
-
                     const chart = new Chart(contentChart, config);
                     chart.canvas.parentNode.style.height = height;
                     chart.canvas.parentNode.style.width = (window.innerWidth < 400) ? width[1] : width[0];
@@ -71,9 +77,6 @@ function createGraphic(canvas, data, title, type = "radar", height = "300px", wi
                     charts[canvas] = chart;
                 } catch (error) {
                     const copy = charts[canvas].config;
-
-                    console.log(copy);
-
 
                     charts[canvas].destroy()
 
