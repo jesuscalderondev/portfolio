@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio - Jesús Calderón</title>
-    <link rel="stylesheet" href="./src/styles/custom.css">
+    <link rel="stylesheet" href="./src/styles/custom.min.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="data/favicon32.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="data/favicon48.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/favicon16.png">
+
+    <meta name="keywords" content="Desarrollador Python, Dev Python, Developer Python, Developer, Python Program, Jesus Calderon, Jesús Calderón, Desarrollador en Colombia, Desarrollador en Santa Marta">
+    <meta name="description" content="Soy un desarrollador que le apasiona el mundo de la tecnología, con habilidades sólidas y blandas muy diversas, con una visión amplia del mundo tech.">
 </head>
 
 <body class="bg-dark-c">
@@ -67,21 +74,27 @@
                 </div>
 
                 <p class="description hidden hidden-l">
-                    Soy estudiante de Ing. en Sistema en la Universidad del Magdalena, me desempeño en el área de
+
+                    Actualmente estudio en la Universidad del Magdalena, cursando el 8vo semestre,
+                    adquiriendo manejo de paradigmas de la programación como POO, estructuras de datos, complejidad
+                    algoritmica, bases de datos, desarrollo web, etc. Además de habilidades como redacción e
+                    interpretación de historias de usuarios, requerimientos, comunicación acertiva, me desempeño en el
+                    área de
                     desarrollo Backend, aunque también tengo conocimientos sólidos en la parte del Frontend.
 
-                    Actualmente uso como lenguaje base Python, principalmente usando el framework Flask, cuento con
+                    Me desempeño en el lenguaje Python, principalmente usando el framework Flask, cuento con
                     más de un año de experiencia laboral y dos años de experiencia demostrable, en mi tiempo de trabajo,
                     he desarrollado servicios web con diferentes herramientas, tales como, JWT, Sessions,
                     entornos virtuales, manejo de archivos en la nube, ORM, POO, arquitectura y estructura de datos
                     y manejo de puertos. Manejo de archivos como excel en sus extensiones .xls y .xlsx, para migración a
-                    base de datos y generando los mismos desde los sistemas, para ser descargados, además de generar
+                    base de datos y generando los mismos desde los sistemas, para ser descargados, con laopción de
+                    generar
                     reportes en pdf con la librería reportlab.
 
                     <br><br>
 
                     En el apartado de frontend tengo conocimientos sólidos en JS vanilla, HTML5, CSS y Bootstrap, con
-                    experiencia en el consumo de API's, manejo de fecth y json para conexiones con el backend, además de
+                    experiencia en el consumo de API's, manejo de fecth y json para conexiones con el backend,
                     diseños prácticos con el uso del framework Bootstrap para hacerlo responsive.
 
                     <br><br>
@@ -89,9 +102,9 @@
                     En otros apartados también he trabajado en la creación de scripts y bots, para hacer integraciones
                     con sistemas mediante API's o conexiones directas a bases de datos, automatización de tareas y
                     optimización de procesos a la hora de creación de algoritmos, obtener datos o crearlos. Llevando de
-                    la mano proyecttos en conjunto, cumpliendo el rol de QA en ocaciones requeridas, teniendo
-                    experiencia en la parte de dirección y coordinación de procesos de concepción y diseño de softare
-                    para implementación de sistemas en entorno de desarrollo y admás de un entorno de producción.
+                    la mano proyectos en conjunto, cumpliendo el rol de QA en ocaciones requeridas, teniendo
+                    experiencia en la parte de dirección y coordinación de procesos de concepción y diseño de software
+                    para implementación de sistemas en entorno de desarrollo y además de un entorno de producción.
                 </p>
             </div>
         </div>
@@ -196,35 +209,195 @@
 
         <div class="exp" id="exp">
             <h3 class="display-2">Reactiva R7</h3>
-            <p class="description hidden ">
-                Actualmente sigo vinculado con esta empresa, cumpliendo con mis funciones como desarrollador fullstack
-                para desarrollo de un software privativo, usando frameworks de Python como Flask, Tkinter, Sqlalchemy,
-                además de usar también tecnologías de frontend como JS, CSS3 y HTML5, frameworks como Bootstrap, entre
-                otros. También llevo a cabo la realización de diagramas de flujo, mapeo de bases de datos. También he
-                realizado migración de datos de archivos de extensiones .xls y/o .xlsx a bases de datos relacioneales en
-                motores como SQL SERVER y MySql.
-            </p>
+
+            <div class="flex">
+
+                <div class="text-coneic">
+                    <p class="description hidden ">
+                        Actualmente sigo vinculado con esta empresa, cumpliendo con mis funciones como desarrollador
+                        fullstack
+                        para desarrollo de un software privativo, usando frameworks de Python como Flask, Tkinter,
+                        Sqlalchemy, tecnologías de frontend como JS, CSS3 y HTML5, frameworks como Bootstrap,
+                        entre
+                        otros. De la misma manera llevo a cabo la realización de diagramas de flujo, mapeo de bases de
+                        datos. También he
+                        realizado migración de datos de archivos de extensiones .xls y/o .xlsx a bases de datos
+                        relacioneales en
+                        motores como SQL SERVER y MySql.
+                    </p>
+                </div>
+
+                <div class="container-chart">
+                    <canvas id="reactiva">
+
+                    </canvas>
+                </div>
+
+            </div>
+
 
             <h3 class="display-2 display-2-blue">CONEIC SMR</h3>
 
-            <div class="gallery flex">
+            <div class="flex">
 
-                <img src="./data/logo.png" alt="logo de coneic" class="coneic hidden" height="300px" width="300px">
+
+                <div class="container-chart">
+                    <canvas id="coneic">
+
+                    </canvas>
+                </div>
 
                 <div class="text-coneic">
                     <p class="description hidden hidden-l">
-                        Desarrollé e implementé, tanto backend como frontend para dicha aplicación, contando con un panel de
-                        administración para control de actividades y del evento prinicipal. Además de un apartado de
-                        usuarios, para registrarse en las diferentes actividades. Un sistema de scaneo y creación de códigos
+                        Desarrollé e implementé, tanto backend como frontend para dicha aplicación, contando con un
+                        panel de
+                        administración para control de actividades y del evento principal. Además de un apartado de
+                        usuarios, para registrarse en las diferentes actividades. Un sistema de escaner y creación de
+                        códigos
                         QR’s para la identificación de usuarios, sistema de notificaciones vía correo electrónico y
                         autenticación con JWT.
                     </p>
-                    <a href="https://www.coneic.org/" class="btn btn-primary btn-semi-circle">Ir al sitio <i class="fa-solid fa-link"></i></a>
+                    <a href="https://www.coneic.org/" class="btn btn-primary btn-semi-circle">Ir al sitio <i
+                            class="fa-solid fa-link"></i></a>
                 </div>
 
-                
+
+            </div>
+
+            <hr class="salt">
+
+            <h3 class="display-2 display-2-purple">Ai-rchive - File Controller</h3>
+
+            <div class="flex">
+                <div class="text-coneic">
+                    <p class="description hidden hidden-l">
+                        En este poyecto hice uso de tecnologías como Python y JavaScript, con de la integración de la
+                        API de GEMINI-PRO-AI para hacer consultas desde el mismo sistema. Teniendo control de los
+                        archivos asignados por áreas recurriendo a la autenticación con JWT, donde se pueden realizar
+                        solicitudes a otras dependecias para
+                        descargar ver o modificar archivos. Del mismo modo todos estos movimientos son registrados en un
+                        historial que puede ser visto desde el mismo sistema o descargado en un archivo de Excel, sin
+                        olvidar que cuenta con notificaciones vía correo electronico usando el servicio de SMTP.
+                    </p>
+                    <a href="https://github.com/jesuscalderondev/fileController"
+                        class="btn btn-primary btn-semi-circle">Repositorio <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="container-chart">
+                    <canvas id="airchive">
+
+                    </canvas>
+                </div>
+
+            </div>
+
+            <hr class="salt">
+
+            <h3 class="display-2 display-2-blue">SYTE+ QR</h3>
+
+            <div class="flex">
+
+
+                <div class="container-chart">
+                    <canvas id="systemas">
+
+                    </canvas>
+                </div>
+
+                <div class="text-coneic">
+                    <p class="description hidden hidden-l">
+                        Aplicativo para la gestión de tickets para el evento de la asociación de Ing. de Sistemas y de
+                        Ing. Electrónica de la Universidad del Magdalena. Este sistema fue un donativo por mi parte a
+                        los representantes de ambas asociaciones con el objetivo de poner a prueba mis capacidades en
+                        entornos de trabajo real. Brindando un software que permite generar de manera aútomatica boletos
+                        para los asistentes, desde una panel de administrador sencillo y enviarlos vía correo
+                        electrónico al comprador, además de contar con una Aplicación realizada en Flutter por el
+                        estudiante de Ing. de Sistemas Daniel Bonnett que
+                        permite saber si el código presentado en el ticket es válido para el ingreso o no, sin olvidar
+                        que este sistema, permite montar un ambiente local (intranet) en una red sin necesidad de
+                        conexión a
+                        internet, ya que este puede clonar la base de datos (SQLITE) que se encuentra en en el servidor
+                        remoto,
+                        antes de empezar el evento, previniendo fallas como perdida de conexión y dando curso normal a
+                        las actividades.
+
+                    </p>
+                    <a href="https://github.com/jesuscalderondev/codigosQr"
+                        class="btn btn-primary btn-semi-circle">Repositorio <i class="fa-brands fa-github"></i></a>
+                </div>
+
+            </div>
+
+            <hr class="salt">
+
+            <h3 class="display-2 display-2-purple">FinanciApp</h3>
+
+            <div class="flex">
+                <div class="text-coneic">
+                    <p class="description hidden hidden-l">
+                        El backend de esta aplicación llamada FinanciApp estaba centrado en la
+                        gestión de sesiones, así como de historiales de gastos, clasificación de los
+                        mismos por tipos y montos, usando como base los Frameworks de Python
+                        Flask y Django Rest, con ORM (Sqlalchemy) y Flask-Mail para el envío de
+                        correos electrónicos, entre otras herramientas y librerías.
+                    </p>
+                    <a href="https://github.com/jesuscalderondev/backAndroid"
+                        class="btn btn-primary btn-semi-circle">Repositorio <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="container-chart">
+                    <canvas id="financiApp">
+
+                    </canvas>
+                </div>
+
             </div>
         </div>
+
+        <hr class="salt">
+
+        <h2 class="display-1">Integraciones</h2>
+
+        <div class="skills">
+            <div class="cards">
+                <div class="tarjet hidden tarjet-blue">
+                    <i class="fa-brands fa-paypal"></i>
+                    <p class="h4">Paypal</p>
+                </div>
+                <div class="tarjet hidden tarjet-blue">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p class="h4">MercadoPago</p>
+                </div>
+
+                <div class="tarjet hidden tarjet-danger">
+                    <div>
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <p class="h4">Firebase</p>
+                </div>
+
+                <div class="tarjet hidden tarjet-purple">
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <p class="h4">Gemini AI</p>
+                </div>
+
+
+                <div class="tarjet hidden tarjet-purple">
+                    <div>
+                        <i class="fa-solid fa-f"></i>
+                    </div>
+                    <p class="h4">Fortnite API</p>
+                </div>
+
+                <div class="tarjet hidden tarjet-blue">
+                    <i class="fa-brands fa-telegram"></i>
+                    <p class="h4">Bot Telegram</p>
+                </div>
+            </div>
+        </div>
+
 
         <hr class="salt">
 
@@ -262,6 +435,8 @@
             </div>
         </div>
 
+
+
     </main>
 
     <footer>
@@ -283,8 +458,11 @@
     </div>
 
 </body>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="src/logic/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./src/logic/index.min.js"></script>
 <script src="https://kit.fontawesome.com/f1af7d663e.js" crossorigin="anonymous"></script>
 
 </html>
